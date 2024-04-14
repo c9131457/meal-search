@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+// import { RouterLink } from 'vue-router';
 
 const { meal } = defineProps({
     meal: {
@@ -14,11 +14,9 @@ const { meal } = defineProps({
         <router-link :to="{}">
             <img :src="meal.strMealThumb" class="rounded-t-xl h-48 object-cover w-full"/>
         </router-link>
-        <div class="p-3">
-                <h3 class="font-bold">{{ meal.strMeal }}</h3>
-                <p class="mb-4 line-clamp-3">{{ meal.strInstructions }}</p>
-            </div>
-
     </div>
-    
+    <div class="p-3">
+        <h3 class="font-bold">{{ meal.strMeal }}</h3>
+        <p class="mb-4 line-clamp-3">{{ meal.strInstructions }}</p>
+    </div>
 </template>
