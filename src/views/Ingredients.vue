@@ -30,7 +30,7 @@ const searchIngredients = computed(() => {
 
     <!-- {{ ingredients }} -->
 
-    <dev class="p-10">
+    <div class="p-10">
         <input type="text" v-model="keyword" class="rounded border-2 border-gray-200 w-full bg-white mb-5" placeholder="Enter ingredients name"/>
 
         <div class="grid grid-cols-4 gap-5">
@@ -42,5 +42,5 @@ const searchIngredients = computed(() => {
             </router-link>
 
         </div>
-    </dev>
+    </div>
 </template>
